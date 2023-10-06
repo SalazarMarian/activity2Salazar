@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Login/Register/Logout Page</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Login/Register/Logout Page</h1>
+      <form id="loginForm" class="form">
+        <h2>Login</h2>
+        <div class="form-control">
+          <label for="loginUsername">Username:</label>
+          <input type="text" id="loginUsername" name="username" required>
+        </div>
+        <div class="form-control">
+          <label for="loginPassword">Password:</label>
+          <input type="password" id="loginPassword" name="password" required>
+        </div>
+        <button type="submit" id="loginButton">Login</button>
+      </form>
+      <form id="registerForm" class="form">
+        <h2>Register</h2>
+        <div class="form-control">
+          <label for="registerUsername">Username:</label>
+          <input type="text" id="registerUsername" name="username" required>
+        </div>
+        <div class="form-control">
+          <label for="registerPassword">Password:</label>
+          <input type="password" id="registerPassword" name="password" required>
+        </div>
+        <button type="submit" id="registerButton">Register</button>
+      </form>
+      <div id="userGreeting" class="hidden">
+        <h2>Hello <span id="greetingUsername"></span></h2>
+        <button type="button" id="logoutButton">Logout</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
